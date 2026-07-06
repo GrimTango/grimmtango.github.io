@@ -3,7 +3,7 @@ import { string } from "astro:schema";
 import "../styles/global.css";
 
 interface Props {
-    label: string;
+    label?: string;
     href: string;
 }
 
@@ -15,5 +15,5 @@ const { label, href } = Astro.props;
     href={href}
     aria-label={`${label} link`}
 >
-    {label}
+    <slot />
 </a>

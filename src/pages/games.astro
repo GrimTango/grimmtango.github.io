@@ -1,8 +1,18 @@
 ---
+import GamesCard from "../components/GamesCard.astro";
 import Layout from "../layouts/Layout.astro";
+import CJImage from "../assets/Ceolans_Journey.png";
 import "../styles/global.css";
 ---
 
 <Layout title="Games">
-    <div class="content"></div>
+    <div class="content flex flex-col gap-8">
+        <GamesCard
+            title="Ceolan's Journey"
+            bg={CJImage}
+            summary="Step Into a World of Celtic Folklore in this 3D Platforming Side Scroller and Music Adventure Game"
+            link="/games/ceolansjourney"
+        />
+        <!-- <hr /> -->
+    </div>
 </Layout>

@@ -31,11 +31,25 @@ hr {
   width: 100%;
 }
 
+ul {
+  list-style: disc;
+  list-style-position: inside;
+}
+
 .content {
   min-height: calc(100vh - 15rem);
   margin-inline: 15%;
   flex: 1;
   margin-block: 5rem;
+}
+
+@media (max-width: 768px) {
+  .content {
+    min-height: calc(100vh - 15rem);
+    margin-inline: 5%;
+    flex: 1;
+    margin-block: 5rem;
+  }
 }
 
 .nav-link {

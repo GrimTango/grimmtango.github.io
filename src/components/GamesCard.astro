@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets";
+import "../styles/global.css";
+import Button from "./Button.astro";
+
+interface Props {
+    bg: ImageMetadata;
+    title: string;
+    summary: string;
+    link: string;
+}
+
+const { bg, title, summary, link } = Astro.props;
+---
+
+<a
+    class={`w-full h-[30rem] md:h-[40rem] relative object-cover overflow-hidden rounded-3xl group flex flex-col justify-center items-center`}
+    href={link}
+>
+    <Image
+        class="absolute z-[-1] h-full w-full object-cover blur-[2px] transition-all duration-500 ease-in-out group-hover:scale-[1.05] group-hover:blur-[8px]"
+        src={bg}
+        alt={"Game Card"}
+        loading="eager"
+        transition:persist
+    />
+    <div class="flex flex-col items-center gap-4 p-8 text-center text-white drop-shadow-xl">
+        <h1>{title}</h1>
+        <span>{summary}</span>
+        <!-- <Button href={link}> Learn More &gt; </Button> -->
+        <span class="underline">Learn More &gt;</span>
+    </div>
+</a>
