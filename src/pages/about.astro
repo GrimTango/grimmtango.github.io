@@ -11,21 +11,31 @@ import TeamCard from "../components/TeamCard.astro";
         <span> Studio GrimTango is an indie games studio with developers based around the globe. </span>
         <h1 class="text-center">Meet The Team</h1>
         <div class="flex flex-wrap justify-center gap-[5rem] md:gap-[10rem]">
-            <TeamCard name="Saucy" role="Director/Design Lead" avatar="/masks/saucy.png" />
-            <TeamCard name="Grimm" role="Art Lead" avatar="/masks/grim.png" />
+            {/* Direction */}
+            <TeamCard name="Saucy" role="Director / Design Lead" avatar="/masks/saucy.png" />
             <TeamCard name="Er3te" role="Producer, 2D Art" avatar="/masks/eran.png" />
-            <TeamCard name="Rado" role="Env. Lead" />
-            <TeamCard name="Elizabeth Becker" role="Music Lead" avatar="/masks/ella.png" />
+
+            {/* Programming */}
             <TeamCard name="Fresh" role="Programming Lead" avatar="/masks/fresh.png" />
             <TeamCard name="Leo" role="Programmer" />
             <TeamCard name="Felix" role="Programmer" avatar="/masks/felix.png" />
+
+            {/* Art */}
+            <TeamCard name="Grimm" role="Art Lead" avatar="/masks/grim.png" />
+            <TeamCard name="Rado" role="Environment Lead" />
+            <TeamCard name="Lina Tellefsen" role="Concept Artist, 2D Artist" avatar="/masks/lina.png" />
             <TeamCard name="Xekat" role="3D Artist" avatar="/masks/xekat.png" />
             <TeamCard name="Amanda" role="3D Artist" avatar="/masks/amanda.png" />
-            <TeamCard name="Brandon Trimble" role="Narrative Design" avatar="/masks/brandon.png" />
-            <TeamCard name="Saph 蓝宝茶叶" role="Writer, VA" avatar="/masks/saph.png" />
-            <TeamCard name="Braxtyn Larcade" role="SFX Lead" avatar="/masks/braxtyn.png" />
-            <TeamCard name="Lina Tellefsen" role="2D artist / Concept Artist" avatar="/masks/lina.png" />
+            <TeamCard name="Jacob H" role="Texture Artist" avatar="/masks/jasco.png" />
             <TeamCard name="Nyoom" role="UI Artist" avatar="/masks/nyoom.png" />
+
+            {/* Narrative */}
+            <TeamCard name="Brandon Trimble" role="Narrative Designer" avatar="/masks/brandon.png" />
+            <TeamCard name="Saph 蓝宝茶叶" role="Writer, Voice Actor" avatar="/masks/saph.png" />
+
+            {/* Audio */}
+            <TeamCard name="Elizabeth Becker" role="Music Lead" avatar="/masks/ella.png" />
+            <TeamCard name="Braxtyn Larcade" role="SFX Lead" avatar="/masks/braxtyn.png" />
         </div>
     </div>
 </Layout>
